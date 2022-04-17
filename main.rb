@@ -9,7 +9,6 @@ subreddit = ARGV[0] || DEFAULT_SUBREDDIT
 
 url = [BASE_URL, subreddit].join("/")
 full_url = [url, DEFAULT_PARAMS.join("&")].join("?")
-puts
 puts "Fetching results from: #{full_url}"
 puts
 
