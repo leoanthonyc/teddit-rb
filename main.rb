@@ -9,7 +9,10 @@ subreddit = ARGV[0] || DEFAULT_SUBREDDIT
 
 url = [BASE_URL, subreddit].join("/")
 full_url = [url, DEFAULT_PARAMS.join("&")].join("?")
-puts full_url
+puts
+puts "Fetching results from: #{full_url}"
+puts
+
 json = JSON.load(URI.open(full_url))
 links = json["links"]
 links.each do |link|
