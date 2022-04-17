@@ -1,4 +1,5 @@
 # teddit-rb
+A simple tool to view subreddits inside the terminal. 
 
 ## How To Use
 ```bash
